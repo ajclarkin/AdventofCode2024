@@ -1,9 +1,9 @@
-## Red-Nosed Reindeer
+# Red-Nosed Reindeer
 
 Another nice one, pretty straight-forward although it took me long enough. Ten minutes away from the computer clarified it all for me though.Another
 
 
-### Part 1
+## Part 1
 
 Read the file line by line (splitting at newline). Then turn each line into a list of multiple integers.
 
@@ -19,7 +19,7 @@ The basic algorithm here is:
 The we just need to count the number of rows which returned 1.
 
 
-### Part 2
+## Part 2
 
 Same task but this time we need to see if failing lines could be made to pass by removing one number.
 
