@@ -19,9 +19,13 @@ unique.
 Then, for each set of pages for printing, go through them, looking to see if the rules are adhered to.
 
 > [1, 2, 3, 4]
+> 
 > 1: nothing to check in preceeded_by, check {2, 3, 4} in followed_by[1]
+> 
 > 2: check preceeded_by[2] for {1} and followed_by[2] for {3, 4}
+> 
 > 3: check preceeded_by[3] for {1, 2} and followed_by[3] for {4}
+> 
 > 4: check preceeded_by[4] for {1, 2, 3} and nothing to check in followed_by.
 
 
