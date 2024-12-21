@@ -40,3 +40,7 @@ replacing them in the dict with what they get expanded to.
 Note that I had to use a copy to make sure that I didn't decrement the count of various keys after they had been increased on this round. I also tried
 setting the count of a key to zero when expanding it but that broke things because you might already have increased this count on this round with an expansion.
 Instead I decremented the count by the number of present at the end of the last round, and that needed the copy taken at the end of the last round.
+
+### Further Reading
+The following tutorial covers recursion and memoisation.
+(Reddit Tutorial)[https://www.reddit.com/r/adventofcode/comments/1hbnyx1/2024_day_11python_mega_tutorial/]
