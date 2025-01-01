@@ -60,7 +60,12 @@ two concave corners.
            AAAA
 ```
 
+So, the solution was to calculate the areas as before and this time save the locations of the perimeters
+instead of the count. I had to make sure and count cells where only the diagonal neighbours were different crops
+as perimeters too, to account for the second example in the block above.
 
-### Further Reading
-The following tutorial covers recursion and memoisation.
-[Reddit Tutorial][https://www.reddit.com/r/adventofcode/comments/1hbnyx1/2024_day_11python_mega_tutorial/)
+After building a list of perimeters per area, loop through them and for each of the four diagonal directions,
+ heck to see if the corner criteria described above were met. Keep a track of the number of corners found.
+
+Then the final answer could be calculated in the same way as before.
+
