@@ -48,4 +48,33 @@ The values are then entered into a structure compatible with matrix operations.
             [B1, B2]
         ],
     ]
+
+
+    Values:
+    [
+        [
+            C1,
+            C2
+        ]
+    ]
 ```
+
+
+
+## Part 2
+
+The solution for part one should just work for part 2. But it didn't. Cue more learning about linear systems. Do I need to do something to reduce the target
+like finding a common divisor? Nope - that doesn't make sense because there's still just one solution. I wondered if some of the equations were the same, for example `x + y = 3` and `2x + 2y = 6` but that would give an error 
+and there are none.
+
+So, my solution is correct but not working. Back to the text. The example doesn't have an answer to validate against, but it does state that only machines
+two and four now work. Add some debugging print statements and it seems we're accepting the solution for *every* set, even though we shouldn't. So, or course, the 
+problem is with `np.isclose()` - because one of the numbers we are comparing is 10,000,000,000,000 the relative tolerance component is far too large. It accepts
+values +/- 10,000ish. So, I just had to change then relative tolerance to 1e-14.
+
+Note that the tolerance applied is relative tolerance * abs(x) + absolute tolerance.
+
+
+### References
+[Maths is Fun - Linear Equations](https://www.mathsisfun.com/algebra/linear-equations.html)
+[Maths is Fun - Solving Linear Eqautions using Matrices](https://www.mathsisfun.com/algebra/systems-linear-equations-matrices.html)
