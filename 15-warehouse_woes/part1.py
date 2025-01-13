@@ -1,4 +1,5 @@
-input = [x for x in open('input.txt'). read().split('\n\n')]
+input = [x for x in open('example.txt'). read().split('\n\n')]
+# input = [x for x in open('input.txt'). read().split('\n\n')]
 lines = input[0].split('\n')
 movements = list(input[1].replace('\n', ''))
 
@@ -52,7 +53,7 @@ for move in movements:
         grid[curpos] = '.'
         curpos = (r + dirs[move][0], c + dirs[move][1])
 
-         
+    PrintGrid(grid)     
 locs = [k for k,v in grid.items() if v == 'O']
 values = [100 * k[0] + k[1] for k in locs]
 
