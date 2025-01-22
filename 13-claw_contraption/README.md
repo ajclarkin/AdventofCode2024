@@ -77,4 +77,7 @@ Note that the tolerance applied is relative tolerance * abs(x) + absolute tolera
 
 ### References
 [Maths is Fun - Linear Equations](https://www.mathsisfun.com/algebra/linear-equations.html)
-[Maths is Fun - Solving Linear Eqautions using Matrices](https://www.mathsisfun.com/algebra/systems-linear-equations-matrices.html)
+
+[Maths is Fun - Solving Linear Equations using Matrices](https://www.mathsisfun.com/algebra/systems-linear-equations-matrices.html)
+
+[LibreTexts Mathematics - 11. Systems of Equations and Inequalities](https://math.libretexts.org/Bookshelves/Algebra/Algebra_and_Trigonometry_1e_(OpenStax)/11%3A_Systems_of_Equations_and_Inequalities)

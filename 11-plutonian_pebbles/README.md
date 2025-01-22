@@ -43,4 +43,4 @@ Instead I decremented the count by the number of present at the end of the last 
 
 ### Further Reading
 The following tutorial covers recursion and memoisation.
-(Reddit Tutorial)[https://www.reddit.com/r/adventofcode/comments/1hbnyx1/2024_day_11python_mega_tutorial/]
+[Reddit Tutorial][https://www.reddit.com/r/adventofcode/comments/1hbnyx1/2024_day_11python_mega_tutorial/)
